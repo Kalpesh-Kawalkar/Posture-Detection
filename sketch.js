@@ -26,3 +26,15 @@ function draw(params) {
     fill(r,g,b);
     ellipse(mouseX, mouseY, 50, 50);
 }
+
+let capture;
+
+function setup(params) {
+    createCanvas(800, 500);
+    capture = createCapture(VIDEO)
+    capture.hide()
+}
+
+function draw(params) {
+    image(capture, 0, 0, 800, 600);
+}
