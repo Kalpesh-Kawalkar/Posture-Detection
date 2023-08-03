@@ -15,7 +15,7 @@ function setup(params) {
     posenet = ml5.poseNet(capture, modelLoaded);
     posenet.on('pose', receivedPoses);
 
-    celeb_img = loadImage('images/Harbhajan.jpg');
+    celeb_img = loadImage('./Harbhajan.jpg');
 }
 
 function receivedPoses(poses) {
