@@ -15,7 +15,7 @@ function setup(params) {
     posenet = ml5.poseNet(capture, modelLoaded);
     posenet.on('pose', receivedPoses);
 
-    celeb_img = loadImage('./Harbhajan.jpg');
+    celeb_img = loadImage('https://raw.githubusercontent.com/Kalpesh-Kawalkar/Posture-Detection/main/Harbhajan.jpg');
 }
 
 function receivedPoses(poses) {
