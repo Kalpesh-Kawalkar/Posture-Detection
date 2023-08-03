@@ -35,6 +35,19 @@ function setup(params) {
     capture.hide()
 }
 
+        noseX = singlePose.nose.x;
+        noseY = singlePose.nose.y;
+
+        reyeX = singlePose.rightEye.x;
+        reyeY = singlePose.rightEye.y;
+
+        leyeX = singlePose.leftEye.x;
+        leyeY = singlePose.lefttEye.y;
+
 function draw(params) {
-    image(capture, 0, 0, 800, 600);
+    image(capture, 0, 0, 800, 600)
+    ellipse(reyeX, reyeY, 30);
+    ellipse(leyeX, leyeY, 30);
 }
+
+        
