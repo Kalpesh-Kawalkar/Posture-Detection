@@ -47,7 +47,7 @@ function draw(params) {
             line(skeleton[j][0].position.x, skeleton[j][0].position.y, skeleton[j][1].position.x, skeleton[j][1].position.y)
         }
 
-        image(actor_img, singlePose.nose.x-45, singlePose.nose.y-60, 100, 100);
+        image(celeb_img, singlePose.nose.x-45, singlePose.nose.y-60, 100, 100);
     }
     
 }
